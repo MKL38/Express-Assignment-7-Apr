@@ -4,7 +4,7 @@ const app = express();
 const port = 4000;
 
 app.get("/profiles", (req, res) => {
-  return res.json({
+  return res.status(200).json({
     data: {
       name: "john",
       age: 20,
